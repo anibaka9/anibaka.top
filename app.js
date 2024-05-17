@@ -1,7 +1,16 @@
 const http = require('http');
 
 http.createServer(function(req, res) {
-	res.write("I love my wife!!!!!");
+	res.write(`<!DOCTYPE html>
+<html>
+<body>
+
+<h1>My First Heading</h1>
+<p>My first paragraph.</p>
+
+</body>
+</html>
+`);
 	res.end();
 }
 ).listen(3000);
